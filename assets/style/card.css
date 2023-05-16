@@ -1,0 +1,154 @@
+.animated-wrapper{
+	display: flex;
+	justify-content: space-around;
+    width: 100%;
+    margin:60px 0 60px 0;
+    gap:10px;
+}
+
+.card-wrapper {
+	height: 500px;
+	margin: 0px auto 0;
+
+	position: relative;
+	perspective: 800px;	
+}
+
+
+
+.card-wrapper .box {
+	position: absolute;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+	height: 100%;
+	width: 100%;
+
+}
+
+.card-wrapper .box .front,
+.card-wrapper .box .back {
+	display: block;
+	margin: 0;
+	height: 100%;
+	width: calc(100% );
+	position: absolute;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.card-wrapper .box .front {
+
+	background-color: #858585;
+	background-image: linear-gradient(104deg, #2c2c2c 40%, #ff8c00 74%);
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card-wrapper .box .front.front2 {
+
+	background-color: #858585;
+	background-image: linear-gradient(104deg, #ff8c00 40%, #2c2c2c 74%);
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card-wrapper .box .front h2 {
+	font-size: 27px;
+	text-align: center;
+	margin-top: 10%;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.card-wrapper .box .front h5  {
+	font-size: 18px;
+	text-align: center;
+	margin: 0 0 30px 0;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.card-wrapper .box .front p{
+	color: #fff;
+}
+
+.card-wrapper .box .back {
+	background-color: #858585;
+	background-image: linear-gradient(104deg, #2c2c2c 40%, #ff8c00 74%);
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	transform: rotateY(180deg);
+}
+
+.card-wrapper .box .back.back2 {
+	background-color: #858585;
+	background-image: linear-gradient(104deg, #ff8c00 40%, #2c2c2c 74%);
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	transform: rotateY(180deg);
+}
+
+.card-wrapper .btn {
+	margin-top: 25px;
+}
+
+.card-wrapper .box.animated {
+	transform: rotateY(-180deg);
+}
+
+.card-wrapper .close {
+	display: block;
+	font-size: 40px;
+	position: absolute;
+	top: 15px;
+	right: 3%;
+	text-decoration: none;
+	color: #fff;
+}
+
+.card-wrapper .btn {
+	color: #fff;
+	display: block;
+	font-size: 15px;
+	margin: 0 auto;
+	max-width: 250px;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #2c2c2c;
+	border:1px solid #ff8c00;
+	border-radius: 50px;
+}
+
+.card-wrapper .container {
+
+	padding-top: 40px;
+	height: 380px;
+	text-align: center;
+	color: #fff
+}
+
+.card-wrapper .img-area {
+	width: 100%;
+}
+
+.card-wrapper .img-area img {
+	width: 100%;
+}
+
+
+
+.card-wrapper .text-area  {
+	text-align: center;
+	font-size:16px
+}
+.card-wrapper .text-area img  {
+	padding-left: 25%;
+}
+.card-wrapper .text-area h2 {
+	margin: 0;
+	text-transform: uppercase;
+}
+
